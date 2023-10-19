@@ -51,4 +51,14 @@ public class AdditionTest {
         int actual = adder.add(x, y);
         assertEquals(expected, actual);
     }   
+
+    // adding negative number
+    @Test
+    public void addNegativeNumbers() {
+        int x = -2;
+        int y = -5;
+        int expected = -7;
+        int actual = adder.add(x, y);
+        assertEquals(expected, actual);
+    }
 }
