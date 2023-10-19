@@ -1,5 +1,6 @@
 package com.testing;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeTrue;
@@ -26,5 +27,11 @@ public class DivisionTest {
     public void assumptionTest() {
         boolean databaseServerUp = false;
         assumeTrue(databaseServerUp);
+    }
+    
+    @Test
+    public void fourDivideByTwo() {
+        Division obj = new Division();
+        assertEquals(2, obj.divide(4, 2));
     }
 }
