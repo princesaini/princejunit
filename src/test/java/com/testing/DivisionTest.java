@@ -34,4 +34,10 @@ public class DivisionTest {
         Division obj = new Division();
         assertEquals(2, obj.divide(4, 2));
     }
+
+    @Test
+    public void tenDivideByFive() {
+        Division obj = new Division();
+        assertEquals(5, obj.divide(10, 2));
+    }
 }
