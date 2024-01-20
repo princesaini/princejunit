@@ -7,6 +7,7 @@ import static org.junit.Assume.assumeTrue;
 
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runners.Parameterized.Parameters;
 
 
 public class DivisionTest {
@@ -39,5 +40,11 @@ public class DivisionTest {
     public void tenDivideByFive() {
         Division obj = new Division();
         assertEquals(5, obj.divide(10, 2));
+    }
+
+    @Test
+    public void fiftyDivideByTen() {
+        Division obj = new Division();
+        assertEquals(5, obj.divide(50, 10));
     }
 }
